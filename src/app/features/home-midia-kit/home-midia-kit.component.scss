@@ -1,0 +1,40 @@
+.home__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.home__conteudo__esquerdo {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-terciaria);
+  height: 100vh;
+  width: 49%;
+  border-right: 2px solid var(--cor-secundaria);
+  padding-left: 25vw;
+}
+.home__conteudo__direito {
+  padding-top: 5rem;
+  display: flex;
+  background-color: var(--cor-terciaria);
+  height: 100vh;
+  width: 51%;
+}
+
+.home__imagem {
+  height: 91vh;
+}
+
+.home__texto__principal1,
+.home__texto__principal2 {
+  font-size: 15rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--cor-primaria);
+  z-index: 2;
+}
+
+.home__texto__principal1 {
+  padding-top: 5rem;
+}

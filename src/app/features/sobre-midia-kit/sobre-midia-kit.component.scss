@@ -1,0 +1,46 @@
+.sobre__container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-terciaria);
+  padding: 10rem 10rem 0 10rem;
+}
+
+.sobre__titulo {
+  font-size: 10rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--cor-primaria);
+  z-index: 999999999999;
+}
+
+.sobre__conteudo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sobre__conteudo__esquerdo {
+  width: 40%;
+}
+
+.sobre__conteudo__direito {
+  height: 2px;
+  margin-top: 30px;
+  background-color: var(--cor-primaria);
+  width: 60%;
+}
+
+.sobre__conteudo__texto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sobre__texto {
+  width: 50%;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-primaria);
+}
+.sobre__imagem {
+  height: 61vh;
+  border-radius: 16px;
+}
