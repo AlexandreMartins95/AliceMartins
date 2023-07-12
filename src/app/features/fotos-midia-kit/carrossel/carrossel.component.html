@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <fa-icon
+    (click)="scrollCarousel(-1)"
+    [icon]="faCircleArrowLeft"
+    class="icon__carrossel icon__prev"
+  ></fa-icon>
+  <ul class="carousel" #carousel>
+    <li class="card" *ngFor="let item of carouselItems">
+      <div class="img">
+        <img [src]="item.imageSrc" [alt]="item.imageAlt" draggable="false" />
+      </div>
+    </li>
+  </ul>
+
+  <fa-icon
+    (click)="scrollCarousel(1)"
+    [icon]="faCircleArrowRight"
+    class="icon__carrossel icon__next"
+  ></fa-icon>
+</div>

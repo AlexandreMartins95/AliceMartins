@@ -12,7 +12,6 @@
   background-color: var(--cor-terciaria);
   height: 100vh;
   width: 49%;
-  border-right: 2px solid var(--cor-secundaria);
   padding-left: 25vw;
 }
 .home__conteudo__direito {
@@ -23,18 +22,40 @@
   width: 51%;
 }
 
+.home__container__texto {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
 .home__imagem {
-  height: 91vh;
+  height: 89vh;
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 4px;
 }
 
 .home__texto__principal1,
 .home__texto__principal2 {
-  font-size: 15rem;
+  font-size: 12rem;
   font-family: "Dancing Script", cursive;
   color: var(--cor-primaria);
   z-index: 2;
 }
 
 .home__texto__principal1 {
-  padding-top: 5rem;
+  padding-top: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home__texto__principal1,
+  .home__texto__principal2 {
+    font-size: 8rem;
+  }
+
+  .home__conteudo__esquerdo {
+    width: 30%;
+  }
+  .home__conteudo__direito {
+    width: 70%;
+  }
 }

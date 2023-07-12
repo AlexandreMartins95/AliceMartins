@@ -3,6 +3,10 @@ import { MenuMidiaKitComponent } from './menu-midia-kit/menu-midia-kit.component
 import { HomeMidiaKitComponent } from './home-midia-kit/home-midia-kit.component';
 import { SobreMidiaKitComponent } from './sobre-midia-kit/sobre-midia-kit.component';
 import { TrabalhosMidiaKitComponent } from './trabalhos-midia-kit/trabalhos-midia-kit.component';
+import { FotosMidiaKitComponent } from './fotos-midia-kit/fotos-midia-kit.component';
+import { CarrosselComponent } from './fotos-midia-kit/carrossel/carrossel.component';
+import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -10,13 +14,17 @@ import { TrabalhosMidiaKitComponent } from './trabalhos-midia-kit/trabalhos-midi
     HomeMidiaKitComponent,
     SobreMidiaKitComponent,
     TrabalhosMidiaKitComponent,
+    FotosMidiaKitComponent,
+    CarrosselComponent,
   ],
-  imports: [],
+  imports: [CommonModule, FontAwesomeModule],
   exports: [
     MenuMidiaKitComponent,
     HomeMidiaKitComponent,
     SobreMidiaKitComponent,
     TrabalhosMidiaKitComponent,
+    FotosMidiaKitComponent,
+    CarrosselComponent,
   ],
   providers: [],
 })
