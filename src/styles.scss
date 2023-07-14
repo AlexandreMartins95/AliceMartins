@@ -8,4 +8,25 @@
   --cor-primaria: #834421;
   --cor-secundaria: #c1936b;
   --cor-terciaria: #e4d3c5;
+  --fonte-primaria: "Montserrat", sans-serif;
+  --fonte-titulo: "Dancing Script", cursive;
+}
+
+.sections__container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-terciaria);
+  padding: 5rem 10rem 0 10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sections__container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sections__container {
+    padding: 5rem 5rem 0 5rem;
+  }
 }

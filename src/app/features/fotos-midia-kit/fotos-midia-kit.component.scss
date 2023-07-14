@@ -1,15 +1,8 @@
-.fotos__container {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--cor-terciaria);
-  padding: 5rem 10rem 0 10rem;
-}
-
 .fotos__titulo {
   font-size: 10rem;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
-  z-index: 999999999999;
+  z-index: 2;
 }
 
 .fotos__header {
@@ -69,6 +62,19 @@
   .carrossel {
     width: 60%;
   }
+
+  .fotos__header {
+    flex-direction: column;
+  }
+  .fotos__conteudo__esquerdo {
+    display: none;
+  }
+  .fotos__conteudo__meio {
+    width: 100%;
+  }
+  .fotos__conteudo__direito {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -80,5 +86,10 @@
 @media screen and (max-width: 900px) {
   .carrossel {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fotos__titulo {
+    font-size: 8rem;
   }
 }

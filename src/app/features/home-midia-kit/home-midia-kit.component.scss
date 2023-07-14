@@ -37,7 +37,7 @@
 .home__texto__principal1,
 .home__texto__principal2 {
   font-size: 12rem;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
   z-index: 2;
 }

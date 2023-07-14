@@ -7,6 +7,8 @@ import { FotosMidiaKitComponent } from './fotos-midia-kit/fotos-midia-kit.compon
 import { CarrosselComponent } from './fotos-midia-kit/carrossel/carrossel.component';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EstatisticasMidiaKitComponent } from './estatisticas-midia-kit/estatisticas-midia-kit.component';
+import { ContatoMidiaKitComponent } from './contato-midia-kit/contato-midia-kit.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TrabalhosMidiaKitComponent,
     FotosMidiaKitComponent,
     CarrosselComponent,
+    EstatisticasMidiaKitComponent,
+    ContatoMidiaKitComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
   exports: [
@@ -25,6 +29,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TrabalhosMidiaKitComponent,
     FotosMidiaKitComponent,
     CarrosselComponent,
+    EstatisticasMidiaKitComponent,
+    ContatoMidiaKitComponent,
   ],
   providers: [],
 })

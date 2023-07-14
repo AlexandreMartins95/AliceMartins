@@ -1,0 +1,57 @@
+.contato__container {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--cor-primaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-terciaria);
+}
+
+.contato__logo,
+.contato__redes {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contato__logo__texto1,
+.contato__logo__texto2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-terciaria);
+  font-size: 2.5rem;
+}
+
+.contato__redes {
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contato__icone__texto {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  > svg {
+    fill: var(--cor-terciaria);
+  }
+  > span {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contato__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .contato__redes {
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+  }
+}

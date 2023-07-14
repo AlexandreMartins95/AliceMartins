@@ -17,6 +17,6 @@ nav > ul {
   cursor: pointer;
 
   & li {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-primaria);
   }
 }

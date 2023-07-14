@@ -1,15 +1,8 @@
-.sobre__container {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--cor-terciaria);
-  padding: 5rem 10rem 0 10rem;
-}
-
 .sobre__titulo {
   font-size: 10rem;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
-  z-index: 999999999999;
+  z-index: 2;
 }
 
 .sobre__conteudo {
@@ -37,10 +30,44 @@
 .sobre__texto {
   width: 50%;
   font-size: 1.8rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-primaria);
   color: var(--cor-primaria);
 }
 .sobre__imagem {
   height: 61vh;
   border-radius: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sobre__conteudo {
+    flex-direction: column;
+  }
+
+  .sobre__conteudo__esquerdo {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+  .sobre__conteudo__direito {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .sobre__conteudo__texto {
+    flex-direction: column;
+  }
+  .sobre__texto {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sobre__titulo {
+    font-size: 8rem;
+  }
+  .sobre__texto {
+    font-size: 1.2rem;
+  }
 }
