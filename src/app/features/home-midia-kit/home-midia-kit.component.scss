@@ -29,7 +29,10 @@
 }
 
 .home__imagem {
-  height: 89vh;
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
   border: 2px solid var(--cor-secundaria);
   border-radius: 4px;
 }
@@ -64,11 +67,8 @@
 }
 
 @media screen and (max-width: 390px) {
-  .home__imagem {
-    height: 57vh;
-  }
   .home__texto__principal1,
   .home__texto__principal2 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
