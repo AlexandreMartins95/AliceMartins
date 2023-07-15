@@ -71,3 +71,9 @@
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 390px) {
+  .sobre__titulo {
+    font-size: 6rem;
+  }
+}

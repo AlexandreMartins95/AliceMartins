@@ -20,3 +20,20 @@ nav > ul {
     font-family: var(--fonte-primaria);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .menu__container {
+    height: 5rem;
+  }
+  nav > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    cursor: pointer;
+
+    & li {
+      font-family: var(--fonte-primaria);
+      font-size: 0.5rem;
+    }
+  }
+}

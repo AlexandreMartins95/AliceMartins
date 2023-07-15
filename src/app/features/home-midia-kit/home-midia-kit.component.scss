@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--cor-terciaria);
-  height: 100vh;
+
   width: 49%;
   padding-left: 25vw;
 }
@@ -18,7 +18,7 @@
   padding-top: 5rem;
   display: flex;
   background-color: var(--cor-terciaria);
-  height: 100vh;
+
   width: 51%;
 }
 
@@ -47,6 +47,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home__container {
+    height: auto;
+  }
   .home__texto__principal1,
   .home__texto__principal2 {
     font-size: 8rem;
@@ -57,5 +60,15 @@
   }
   .home__conteudo__direito {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .home__imagem {
+    height: 57vh;
+  }
+  .home__texto__principal1,
+  .home__texto__principal2 {
+    font-size: 6rem;
   }
 }
