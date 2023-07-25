@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title: any;
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuMidiaKitComponent } from './menu-midia-kit.component';
 
-describe('MenuMideaKitComponent', () => {
+describe('MenuMidiaKitComponent', () => {
   let component: MenuMidiaKitComponent;
   let fixture: ComponentFixture<MenuMidiaKitComponent>;
 
