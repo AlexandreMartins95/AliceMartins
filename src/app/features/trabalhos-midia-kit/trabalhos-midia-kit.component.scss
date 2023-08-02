@@ -113,6 +113,10 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
+
+  .trabalhos__imagem {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 615px) {
   .trabalhos__logos__container {

@@ -68,6 +68,9 @@
   .sobre__conteudo__texto {
     flex-direction: column;
   }
+  .sobre__texto__container {
+    width: 100%;
+  }
   .sobre__texto {
     width: 100%;
   }
@@ -85,6 +88,10 @@
   }
   .sobre__texto {
     font-size: 1.2rem;
+  }
+
+  .sobre__imagem {
+    height: 50vh;
   }
 }
 
