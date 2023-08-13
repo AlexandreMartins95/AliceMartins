@@ -9,6 +9,10 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EstatisticasMidiaKitComponent } from './estatisticas-midia-kit/estatisticas-midia-kit.component';
 import { ContatoMidiaKitComponent } from './contato-midia-kit/contato-midia-kit.component';
+import { PublisMidiaKitComponent } from './publis-midia-kit/publis-midia-kit.component';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 @NgModule({
   declarations: [
@@ -20,8 +24,15 @@ import { ContatoMidiaKitComponent } from './contato-midia-kit/contato-midia-kit.
     CarrosselComponent,
     EstatisticasMidiaKitComponent,
     ContatoMidiaKitComponent,
+    PublisMidiaKitComponent,
   ],
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    AccordionModule,
+    ButtonModule,
+    PanelMenuModule,
+  ],
   exports: [
     MenuMidiaKitComponent,
     HomeMidiaKitComponent,
@@ -31,6 +42,9 @@ import { ContatoMidiaKitComponent } from './contato-midia-kit/contato-midia-kit.
     CarrosselComponent,
     EstatisticasMidiaKitComponent,
     ContatoMidiaKitComponent,
+    PublisMidiaKitComponent,
+
+    AccordionModule,
   ],
   providers: [],
 })

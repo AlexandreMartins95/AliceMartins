@@ -70,29 +70,60 @@
   display: flex;
   padding-top: 4rem;
 }
-.estatisticas__numeros {
-  width: 50%;
+
+.estatisticas__numeros__wrapper {
+  width: 60%;
   display: flex;
   flex-direction: column;
+  padding: 0 10rem 0 0;
+}
+.estatisticas__numeros {
+  width: 100%;
+  display: flex;
+  height: 50%;
   justify-content: center;
   align-items: center;
 
-  > span {
-    color: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
-    font-size: 2rem;
-    font-weight: 700;
-  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
 
-  > p {
-    color: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
-    margin-bottom: 2rem;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background-color: var(--cor-secundaria);
+
+      .rotate {
+        transform: rotate(90deg);
+      }
+
+      > i {
+        color: var(--cor-primaria);
+        font-size: 30px;
+      }
+    }
+
+    > span {
+      color: var(--cor-primaria);
+      font-family: var(--fonte-primaria);
+    }
+
+    > p {
+      color: var(--cor-primaria);
+      font-family: var(--fonte-primaria);
+      margin-bottom: 2rem;
+    }
   }
 }
 
 .estatisticas__celular__foto {
-  width: 50%;
+  width: 40%;
   display: flex;
 }
 .estatisticas__celular {
