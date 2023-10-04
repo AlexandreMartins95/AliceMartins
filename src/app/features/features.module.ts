@@ -13,6 +13,7 @@ import { PublisMidiaKitComponent } from './publis-midia-kit/publis-midia-kit.com
 import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule } from 'primeng/button';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { SplitButtonModule } from 'primeng/splitbutton';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
     AccordionModule,
     ButtonModule,
     PanelMenuModule,
+    SplitButtonModule,
   ],
   exports: [
     MenuMidiaKitComponent,

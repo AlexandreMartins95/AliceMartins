@@ -9,40 +9,22 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 5rem;
   gap: 2rem;
 }
 
-.estatisticas__conteudo__esquerdo {
+.estatisticas__conteudo__esquerdo,
+.estatisticas__conteudo__direito {
   height: 2px;
   background-color: var(--cor-primaria);
-  width: 50%;
+  width: 20%;
 }
 
 .estatisticas__conteudo__meio {
   display: flex;
-}
-
-.estatisticas__conteudo__direito {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 43%;
+  width: 60%;
   gap: 0.3rem;
-}
-
-.hidden {
-  height: 2px;
-  background-color: var(--cor-primaria);
-  width: 50%;
-  display: none;
-}
-
-.estatisticas__conteudo__direito > span {
-  font-family: var(--fonte-primaria);
-  font-weight: 700;
-  color: var(--cor-primaria);
-  text-decoration: underline;
 }
 
 .estatisticas__conteudo__direito > p {
@@ -160,29 +142,39 @@
   object-position: center;
 }
 @media screen and (max-width: 1200px) {
+  .estatisticas__conteudo {
+    flex-direction: column;
+  }
+  .estatisticas__conteudo__esquerdo {
+    display: none;
+  }
+  .estatisticas__conteudo__meio {
+    width: 100%;
+    align-items: center;
+  }
+  .estatisticas__conteudo__direito {
+    width: 100%;
+  }
   .estatisticas__numeros__container {
     padding-bottom: 5rem;
+    flex-direction: column;
   }
-  .estatisticas__numeros {
-    width: 40%;
+
+  .estatisticas__numeros__wrapper {
+    padding: 0;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
   .estatisticas__celular__foto {
-    width: 60%;
+    width: 100%;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .estatisticas__conteudo {
-    flex-direction: column;
-  }
-
-  .estatisticas__conteudo__esquerdo {
-    display: none;
-  }
-  .hidden {
-    display: block;
-    width: 100%;
+  .estatisticas__titulo {
+    font-size: 6rem;
   }
 
   .estatisticas__conteudo__direito {
@@ -195,12 +187,25 @@
     flex-direction: column;
     padding-top: 2rem;
   }
-  .estatisticas__numeros {
-    width: 100%;
-  }
+
   .estatisticas__celular__foto {
     justify-content: center;
     width: 100%;
     padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .estatisticas__numeros > div {
+    > div {
+      width: 40px;
+      height: 40px;
+      > i {
+        font-size: 20px;
+      }
+    }
+    > span {
+      font-size: 12px;
+    }
   }
 }
